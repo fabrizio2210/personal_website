@@ -37,8 +37,17 @@ AWS Certified SysOps Administrator.
 
 ## Writing
 
-- Engineering an Autonomous AI Job Curator on a Raspberry Pi Cluster
-- DockerLab Proxy Performance and IPVS
-- High Availability at Homes
-- The Power of Misunderstanding
-- How I Get a Job at Google as SRE
+- [Engineering an Autonomous AI Job Curator on a Raspberry Pi Cluster](https://fabrizio2210.medium.com/engineering-an-autonomous-ai-job-curator-on-a-raspberry-pi-cluster-c437efdb9bc6)
+- [What AI Is Bringing to Us](https://fabrizio2210.medium.com/what-ai-is-bringing-to-us-79b2a9905c29)
+- [DockerLab Proxy Performance and IPVS](https://fabrizio2210.medium.com/dockerlab-proxy-performance-and-ipvs-7b0cc61e07d6)
+- [High Availability at Homes](https://fabrizio2210.medium.com/high-availability-at-homes-dc01439662b3)
+- [The Power of Misunderstanding](https://fabrizio2210.medium.com/the-power-of-misunderstanding-fc458bfd7deb)
+- [How I Get a Job at Google as SRE](https://fabrizio2210.medium.com/how-i-get-a-job-at-google-as-sre-83d44aef7859)
+
+## Speaking
+
+- [Prompt Less, Structure More](https://www.youtube.com/watch?v=2aAuw03LzIw&t=5042s) — Speck&Tech 87
+- [Non entrerò mai a Google](https://2021.ictdays.it/programma/alumni-waldner/index.html) — ICT Days
+- [The Remote Onboarder](https://www.youtube.com/watch?v=cRfrE7J13rQ) — GDG DevFest
+- [What is Site Reliability Engineering (SRE)?](https://www.youtube.com/watch?v=pj_RR1qP5Nk) — Crafted Software
+- [#SRE: Ecco come Google non si ferma mai](https://www.youtube.com/watch?v=6aKEyXVLpRk) — Geek Talk
