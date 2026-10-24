@@ -1,0 +1,12 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: personal_website
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./llms.txt:/usr/share/nginx/html/llms.txt:ro
+      - ./assets:/usr/share/nginx/html/assets:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped

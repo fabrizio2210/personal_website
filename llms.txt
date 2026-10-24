@@ -1,0 +1,44 @@
+# Fabrizio Waldner — Senior Site Reliability Engineer
+
+> Senior SRE at Nebius and ex-Google L5 Site Reliability Engineer, specialized in planet-scale
+> control planes, bare-metal edge infrastructure, and applied AI for production reliability.
+
+## About
+
+Fabrizio Waldner is a Senior Site Reliability Engineer based in Italy. He spent five years at
+Google UK advancing from L3 to L5, re-architecting the Espresso SDN control plane across 50+
+global metroshards, deploying BGP routing planes into restricted cloud environments, and
+modernizing rollout pipelines for 4,700+ microservices. He now drives reliability and
+infrastructure scaling for AI cloud compute at Nebius.
+
+Before Google he spent five years at Phoenix Informatica Bancaria automating Linux provisioning
+with Ansible and Puppet. He holds a Master's degree in Telecommunications Engineering from the
+Università degli Studi di Trento and is a Google-certified Python Readability reviewer and
+AWS Certified SysOps Administrator.
+
+## Links
+
+- [LinkedIn](https://www.linkedin.com/in/fabrizio-waldner/)
+- [GitHub](https://github.com/fabrizio2210)
+- [Medium](https://fabrizio2210.medium.com/)
+
+## Experience
+
+- **Nebius** — Site Reliability Engineer (Post-Google — Present): reliability and scaling for AI cloud compute.
+- **Google UK** — Senior SRE / SWE, L3 → L4 → L5 (Aug 2020 — Recent): Borg, Espresso SDN, BGP, 4,700+ microservices, incident command.
+- **Phoenix Informatica Bancaria** — Unix System Administrator (May 2015 — Jul 2020): Ansible/Puppet automation, DNS re-architecture.
+
+## Core areas
+
+- Hyperscale control planes (Borg, Espresso SDN, BGP, Borgmon)
+- Distributed edge engineering (Docker Swarm, IPVS, Chisel, Raspberry Pi clusters)
+- Site reliability engineering (SLI/SLO, incident command, blameless post-mortems)
+- Applied AI for operations (prompt decomposition, autonomous edge agents)
+
+## Writing
+
+- Engineering an Autonomous AI Job Curator on a Raspberry Pi Cluster
+- DockerLab Proxy Performance and IPVS
+- High Availability at Homes
+- The Power of Misunderstanding
+- How I Get a Job at Google as SRE

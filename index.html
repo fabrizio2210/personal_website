@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabrizio Waldner — Senior Site Reliability Engineer</title>
+  <meta name="description" content="Fabrizio Waldner — Senior Site Reliability Engineer (Ex-Google L5). Planet-scale control planes, bare-metal edge infrastructure, and applied AI for production reliability." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="#top">Fabrizio Waldner</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#career">Experience</a></li>
+        <li><a href="#skills">Expertise</a></li>
+        <li><a href="#artifacts">Projects</a></li>
+        <li><a href="#publications">Writing</a></li>
+        <li><a href="#talks">Speaking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <p class="hero__kicker">Senior Site Reliability Engineer · Ex-Google L5</p>
+      <h1 class="hero__name">Fabrizio Waldner</h1>
+      <p class="hero__lede">
+        I build reliable distributed systems — from planet-scale cloud control planes to
+        bare-metal edge clusters. A systems administrator by trade and a developer by passion,
+        I treat operational failure as a software problem.
+      </p>
+      <div class="hero__meta">
+        <span>Italy</span>
+        <span>Nebius · formerly Google UK</span>
+      </div>
+      <div class="hero__links">
+        <a class="btn btn--primary" href="https://www.linkedin.com/in/fabrizio-waldner/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/fabrizio2210" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://fabrizio2210.medium.com/" target="_blank" rel="noopener">Medium</a>
+      </div>
+    </section>
+
+    <!-- ============ OVERVIEW / METRICS ============ -->
+    <section class="section" id="overview">
+      <div class="stats">
+        <div class="stat">
+          <span class="stat__value" data-count="50" data-suffix="+">0</span>
+          <span class="stat__label">global metroshards migrated</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" data-count="4700" data-suffix="+">0</span>
+          <span class="stat__label">microservice rollouts modernized</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" data-count="10" data-suffix="+">0</span>
+          <span class="stat__label">years in production engineering</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" data-count="3" data-suffix="">0</span>
+          <span class="stat__label">countries across my edge cluster</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HYPERSCALE VS EDGE ============ -->
+    <section class="section" id="scale">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <div>
+          <h2 class="section__title">One discipline, two frontiers</h2>
+          <p class="section__intro">
+            The same principles — routing, health checking, state synchronization — govern
+            planet-scale clouds and a three-country homelab alike.
+          </p>
+        </div>
+      </div>
+
+      <div class="compare">
+        <div class="compare__tabs" role="tablist" aria-label="Hyperscale or edge">
+          <button class="compare__tab is-active" role="tab" aria-selected="true" data-pane="hyperscale">Hyperscale cloud</button>
+          <button class="compare__tab" role="tab" aria-selected="false" data-pane="edge">Bare-metal edge</button>
+        </div>
+
+        <div class="compare__panes">
+          <article class="compare__pane is-active" id="pane-hyperscale" role="tabpanel">
+            <h3 class="compare__title">Google · Nebius</h3>
+            <ul class="compare__list">
+              <li><strong>Borg</strong> — container orchestration at hyperscale</li>
+              <li><strong>Espresso SDN</strong> — re-architected across 50+ metroshards</li>
+              <li><strong>BGP</strong> — routing planes in restricted cloud boundaries</li>
+              <li><strong>Borgmon</strong> — planetary observability and SLI/SLO design</li>
+              <li><strong>4,700+</strong> microservice rollout modernization</li>
+            </ul>
+          </article>
+
+          <article class="compare__pane" id="pane-edge" role="tabpanel" hidden>
+            <h3 class="compare__title">Three-country bare-metal cluster</h3>
+            <ul class="compare__list">
+              <li><strong>Docker Swarm</strong> — multi-region orchestration</li>
+              <li><strong>Raspberry Pi</strong> — ARM nodes on residential ISPs</li>
+              <li><strong>IPVS</strong> — kernel-level Layer-4 load balancing</li>
+              <li><strong>Chisel</strong> — tunneling past carrier-grade NAT</li>
+              <li><strong>Dynu</strong> — autonomous DNS health-check failover</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="career">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <div>
+          <h2 class="section__title">Experience</h2>
+          <p class="section__intro">
+            A deliberate expansion in scope — from regulated banking Unix to hyperscale cloud and AI infrastructure.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__item">
+          <button class="timeline__head" aria-expanded="false">
+            <span class="timeline__org">Nebius</span>
+            <span class="timeline__role">Site Reliability Engineer</span>
+            <span class="timeline__date">Post-Google — Present</span>
+            <span class="timeline__caret" aria-hidden="true"></span>
+          </button>
+          <div class="timeline__body">
+            <p>
+              Driving site reliability, infrastructure scaling, and operational resilience across
+              large-scale, high-performance AI cloud compute platforms.
+            </p>
+            <div class="tags">
+              <span class="tag">Linux</span><span class="tag">Go</span><span class="tag">Python</span>
+              <span class="tag">Distributed Storage</span><span class="tag">Cloud Orchestration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <button class="timeline__head" aria-expanded="false">
+            <span class="timeline__org">Google UK</span>
+            <span class="timeline__role">Senior SRE / SWE · L3 → L4 → L5</span>
+            <span class="timeline__date">Aug 2020 — Recent</span>
+            <span class="timeline__caret" aria-hidden="true"></span>
+          </button>
+          <div class="timeline__body">
+            <p>
+              Advanced two levels in five years while managing planetary-scale production services on
+              Borg. Re-architected the Espresso SDN control plane across 50+ metroshards, deployed BGP
+              routing planes into restricted Google Cloud Dedicated environments, and streamlined
+              rollouts across 4,700+ microservices.
+            </p>
+            <div class="highlight-cards">
+              <div class="h-card"><strong>Incident Command</strong><p>Directed real-time triage and blameless post-mortems for major global network disruptions.</p></div>
+              <div class="h-card"><strong>AI Adoption Roadmap</strong><p>Authored the team strategy to eliminate operational toil through structured AI workflows.</p></div>
+              <div class="h-card"><strong>Python Readability</strong><p>Google-certified gatekeeper for codebase standards across production repositories.</p></div>
+            </div>
+            <div class="tags">
+              <span class="tag">Borg</span><span class="tag">Borgmon</span><span class="tag">Go</span>
+              <span class="tag">Python</span><span class="tag">Espresso SDN</span><span class="tag">BGP</span>
+              <span class="tag">gLinux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <button class="timeline__head" aria-expanded="false">
+            <span class="timeline__org">Phoenix Informatica Bancaria</span>
+            <span class="timeline__role">Unix System Administrator</span>
+            <span class="timeline__date">May 2015 — Jul 2020</span>
+            <span class="timeline__caret" aria-hidden="true"></span>
+          </button>
+          <div class="timeline__body">
+            <p>
+              Automated provisioning of 120+ Linux VMs with Ansible, cutting commissioning time from
+              three days to one hour. Modernized legacy banking infrastructure with Ansible and Puppet,
+              and re-architected monolithic DNS into a horizontally scalable, fault-tolerant topology.
+            </p>
+            <div class="tags">
+              <span class="tag">RHEL</span><span class="tag">IBM AIX</span><span class="tag">Ansible</span>
+              <span class="tag">Puppet</span><span class="tag">DNS</span><span class="tag">Shell</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERTISE ============ -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <div>
+          <h2 class="section__title">Expertise</h2>
+        </div>
+      </div>
+
+      <div class="matrix">
+        <div class="matrix__row matrix__row--head">
+          <span>Domain</span><span>Tools &amp; technologies</span><span>Applied competencies</span>
+        </div>
+        <div class="matrix__row">
+          <span class="matrix__domain">Languages &amp; toolchains</span>
+          <span class="matrix__tools">Go (Gin-Gonic) · Python · Bash · Perl · C++</span>
+          <span>High-concurrency systems programming, CLI automation, microservices, async APIs — Google Python Readability certified.</span>
+        </div>
+        <div class="matrix__row">
+          <span class="matrix__domain">Distributed orchestration</span>
+          <span class="matrix__tools">Google Borg · Docker Swarm · Kubernetes · AWS</span>
+          <span>Workload scheduling, container lifecycle enforcement, multi-region cluster management, bare-metal provisioning, Borgmon observability.</span>
+        </div>
+        <div class="matrix__row">
+          <span class="matrix__domain">Networking &amp; control planes</span>
+          <span class="matrix__tools">BGP · TCP/IP · DNS · IPVS · Espresso SDN · TLS · OpenVPN</span>
+          <span>Global exterior routing, software-defined traffic control, Layer-4 load balancing, reverse-proxy bypass, cross-border tunnel encryption.</span>
+        </div>
+        <div class="matrix__row">
+          <span class="matrix__domain">Infrastructure as code</span>
+          <span class="matrix__tools">Ansible · Puppet · GitLab CI · Jenkins · Vagrant · Libvirt/KVM</span>
+          <span>Automated configuration management, idempotency testing, bare-metal ARM/x86 pipeline testing, dynamic state enforcement.</span>
+        </div>
+        <div class="matrix__row">
+          <span class="matrix__domain">Observability &amp; SRE</span>
+          <span class="matrix__tools">Borgmon · Zabbix · Prometheus · Network Telemetry</span>
+          <span>SLI/SLO design, incident command, blameless post-mortems, proactive capacity planning.</span>
+        </div>
+        <div class="matrix__row">
+          <span class="matrix__domain">Operating systems &amp; hardware</span>
+          <span class="matrix__tools">Debian · RHEL · gLinux · IBM AIX · Raspberry Pi</span>
+          <span>Linux kernel tuning, sysctl optimization, dtoverlay hardware interfacing, low-power cluster management, enterprise Unix virtualization.</span>
+        </div>
+        <div class="matrix__row">
+          <span class="matrix__domain">Applied AI engineering</span>
+          <span class="matrix__tools">Prompt decomposition · AI roadmaps · Autonomous edge agents</span>
+          <span>Transforming manual SRE toil into deterministic agentic workflows, multi-stage context injection, edge-hosted AI job curation.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="artifacts">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <div>
+          <h2 class="section__title">Selected projects</h2>
+          <p class="section__intro">
+            Distributed-systems concepts tested in resource-constrained environments — clustering,
+            proxy routing, and data replication implemented directly on bare-metal hardware.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid--projects">
+        <a class="card" href="https://github.com/fabrizio2210/Docker_Volume_Synchronizator" target="_blank" rel="noopener">
+          <h3 class="card__title">Docker Volume Synchronizator</h3>
+          <p class="card__desc">Containerized volume-sync daemon using HTTP tunneling to bypass carrier NATs and achieve bidirectional file sync within 5 seconds.</p>
+          <div class="tags"><span class="tag">Shell</span><span class="tag">Csync2</span><span class="tag">Lsyncd</span><span class="tag">Chisel</span></div>
+        </a>
+        <a class="card" href="https://github.com/fabrizio2210/ansible-DockerLab" target="_blank" rel="noopener">
+          <h3 class="card__title">High Availability at Homes</h3>
+          <p class="card__desc">Multi-region bare-metal Docker Swarm across three European countries, with automated state healing and dynamic DNS failover.</p>
+          <div class="tags"><span class="tag">Docker Swarm</span><span class="tag">Ansible</span><span class="tag">Traefik</span><span class="tag">Dynu</span></div>
+        </a>
+        <a class="card" href="https://github.com/fabrizio2210/difficult_words" target="_blank" rel="noopener">
+          <h3 class="card__title">Difficult Words Progressive App</h3>
+          <p class="card__desc">Client-side lexical parsing engine analyzing linguistic corpora and subtitle streams to evaluate text complexity.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">PWA</span><span class="tag">Docker</span></div>
+        </a>
+        <a class="card" href="https://github.com/fabrizio2210/been_to_it" target="_blank" rel="noopener">
+          <h3 class="card__title">Been_to_it Data Cache Bridge</h3>
+          <p class="card__desc">High-throughput web bridge exposing tabular data through Redis-backed caching layers to decouple user traffic from upstream API quotas.</p>
+          <div class="tags"><span class="tag">Google Apps Script</span><span class="tag">Redis</span><span class="tag">Go</span></div>
+        </a>
+        <a class="card" href="https://github.com/fabrizio2210/photobook" target="_blank" rel="noopener">
+          <h3 class="card__title">Photobook Service Portal</h3>
+          <p class="card__desc">Three-tier media management service isolating static file ingestion from dynamic metadata query processing.</p>
+          <div class="tags"><span class="tag">Go (Gin-Gonic)</span><span class="tag">Vue.js</span><span class="tag">Object Storage</span></div>
+        </a>
+        <a class="card" href="https://github.com/fabrizio2210/web-infrared" target="_blank" rel="noopener">
+          <h3 class="card__title">Web Infrared IoT Microservice</h3>
+          <p class="card__desc">IoT abstraction layer exposing legacy hardware interfaces via RESTful APIs, deployed through an automated CI/CD pipeline.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">LIRC</span><span class="tag">Jenkins</span></div>
+        </a>
+        <a class="card" href="https://github.com/fabrizio2210/cover_letter" target="_blank" rel="noopener">
+          <h3 class="card__title">Autonomous AI Job Curator</h3>
+          <p class="card__desc">Sovereign edge-computing agent that ingests, filters, and ranks distributed tech roles without reliance on external cloud services.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Local LLM</span><span class="tag">Raspberry Pi</span></div>
+        </a>
+        <a class="card" href="https://github.com/fabrizio2210/ansible-DockerLab" target="_blank" rel="noopener">
+          <h3 class="card__title">IPVS Kernel Load Balancing Layer</h3>
+          <p class="card__desc">Kernel-level Layer-4 routing using Virtual IPs and Keepalived failover, bypassing Layer-7 proxy bottlenecks on ARM hardware.</p>
+          <div class="tags"><span class="tag">IPVS</span><span class="tag">Keepalived</span><span class="tag">Nginx</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ WRITING ============ -->
+    <section class="section" id="publications">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <div>
+          <h2 class="section__title">Writing</h2>
+          <p class="section__intro">
+            Technical essays deconstructing distributed systems, kernel networking, and organizational dynamics.
+          </p>
+        </div>
+      </div>
+
+      <div class="filters" id="pub-filters" role="tablist" aria-label="Filter publications">
+        <button class="filter is-active" data-filter="all">All</button>
+        <button class="filter" data-filter="hyperscale">Hyperscale &amp; SRE</button>
+        <button class="filter" data-filter="edge">Edge &amp; Linux Kernel</button>
+        <button class="filter" data-filter="ai">Applied AI</button>
+        <button class="filter" data-filter="devops">DevOps &amp; Culture</button>
+      </div>
+
+      <ol class="pub-list" id="pub-list">
+        <li class="pub" data-cat="ai"><a href="https://fabrizio2210.medium.com/engineering-an-autonomous-ai-job-curator-on-a-raspberry-pi-cluster-c437efdb9bc6" target="_blank" rel="noopener"><span class="pub__date">Sep 2026</span><span class="pub__title">Engineering an Autonomous AI Job Curator on a Raspberry Pi Cluster</span></a></li>
+        <li class="pub" data-cat="ai"><a href="https://fabrizio2210.medium.com/what-ai-is-bringing-to-us-79b2a9905c29" target="_blank" rel="noopener"><span class="pub__date">Dec 2025</span><span class="pub__title">What AI Is Bringing to Us</span></a></li>
+        <li class="pub" data-cat="devops"><a href="https://fabrizio2210.medium.com/the-pitfalls-of-a-web-app-2eed9087aa46" target="_blank" rel="noopener"><span class="pub__date">May 2024</span><span class="pub__title">The Pitfalls of a Web App</span></a></li>
+        <li class="pub" data-cat="hyperscale"><a href="https://fabrizio2210.medium.com/make-your-google-spreadsheet-available-with-a-web-application-89795301680c" target="_blank" rel="noopener"><span class="pub__date">Nov 2023</span><span class="pub__title">Make Your Google Spreadsheet Available with a Web Application</span></a></li>
+        <li class="pub" data-cat="hyperscale"><a href="https://fabrizio2210.medium.com/a-web-portal-where-to-upload-photos-photobook-17f77de9d137" target="_blank" rel="noopener"><span class="pub__date">Jan 2022</span><span class="pub__title">A Web Portal Where to Upload Photos: Photobook</span></a></li>
+        <li class="pub" data-cat="devops"><a href="https://fabrizio2210.medium.com/devops-thought-your-project-depends-on-others-time-7654e04f3cc4" target="_blank" rel="noopener"><span class="pub__date">May 2021</span><span class="pub__title">DevOps Thought: Your Project Depends on Others' Time</span></a></li>
+        <li class="pub" data-cat="edge"><a href="https://fabrizio2210.medium.com/dockerlab-proxy-performance-and-ipvs-7b0cc61e07d6" target="_blank" rel="noopener"><span class="pub__date">Jan 2021</span><span class="pub__title">DockerLab Proxy Performance and IPVS</span></a></li>
+        <li class="pub" data-cat="devops"><a href="https://fabrizio2210.medium.com/the-power-of-misunderstanding-fc458bfd7deb" target="_blank" rel="noopener"><span class="pub__date">Nov 2020</span><span class="pub__title">The Power of Misunderstanding</span></a></li>
+        <li class="pub" data-cat="edge"><a href="https://fabrizio2210.medium.com/ci-cd-with-jenkins-on-dockerlab-230fc3c856fe" target="_blank" rel="noopener"><span class="pub__date">Aug 2020</span><span class="pub__title">CI/CD with Jenkins on Dockerlab</span></a></li>
+        <li class="pub" data-cat="hyperscale"><a href="https://fabrizio2210.medium.com/how-i-get-a-job-at-google-as-sre-83d44aef7859" target="_blank" rel="noopener"><span class="pub__date">Aug 2020</span><span class="pub__title">How I Get a Job at Google as SRE</span></a></li>
+        <li class="pub" data-cat="edge"><a href="https://fabrizio2210.medium.com/a-web-remote-control-4de614a62b32" target="_blank" rel="noopener"><span class="pub__date">Jul 2020</span><span class="pub__title">A Web Remote Control</span></a></li>
+        <li class="pub" data-cat="devops"><a href="https://fabrizio2210.medium.com/ci-cd-what-is-this-c011a2184e84" target="_blank" rel="noopener"><span class="pub__date">Aug 2019</span><span class="pub__title">CI/CD, What Is This?</span></a></li>
+        <li class="pub" data-cat="devops"><a href="https://fabrizio2210.medium.com/how-i-get-n26-api-and-automate-a-transfer-2ae630c8f7fe" target="_blank" rel="noopener"><span class="pub__date">Jun 2019</span><span class="pub__title">How I Get N26 API and Automate a Transfer</span></a></li>
+        <li class="pub" data-cat="edge"><a href="https://fabrizio2210.medium.com/dockerlab-ce99e2cd1069" target="_blank" rel="noopener"><span class="pub__date">May 2019</span><span class="pub__title">DockerLab</span></a></li>
+        <li class="pub" data-cat="edge"><a href="https://fabrizio2210.medium.com/high-availability-at-homes-dc01439662b3" target="_blank" rel="noopener"><span class="pub__date">Mar 2019</span><span class="pub__title">High Availability at Homes</span></a></li>
+      </ol>
+    </section>
+
+    <!-- ============ SPEAKING ============ -->
+    <section class="section" id="talks">
+      <div class="section__head">
+        <span class="section__num">06</span>
+        <div>
+          <h2 class="section__title">Speaking</h2>
+        </div>
+      </div>
+
+      <div class="talk-feature">
+        <div class="talk-feature__video">
+          <iframe
+            src="https://www.youtube.com/embed/6aKEyXVLpRk"
+            title="#SRE: Ecco come Google non si ferma mai | Geek Talk con Fabrizio Waldner, Site Reliability Engineer"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="talk-feature__meta">
+          <h3 class="card__title">#SRE: Ecco come Google non si ferma mai</h3>
+          <p class="talk-feature__desc">Extraordy Geek Talk · Jun 2022 — Google's planetary reliability engineering: error budgets, SLI/SLO mathematics, and blameless post-mortem incident response.</p>
+        </div>
+      </div>
+
+      <div class="grid grid--talks">
+        <a class="card" href="https://www.youtube.com/watch?v=2aAuw03LzIw" target="_blank" rel="noopener">
+          <span class="card__venue">Speck&amp;Tech 87</span>
+          <h3 class="card__title">Prompt Less, Structure More</h3>
+          <p class="card__desc">Trento, Italy · Jul 2026 — decomposing complex AI tasks into phased, deterministic generation pipelines.</p>
+        </a>
+        <a class="card" href="https://2021.ictdays.it/programma/alumni-waldner/index.html" target="_blank" rel="noopener">
+          <span class="card__venue">ICT Days</span>
+          <h3 class="card__title">Non entrerò mai a Google</h3>
+          <p class="card__desc">Università di Trento · 2021 &amp; 2022 — demystifying technical interviews and transitioning from Italian universities to international tech.</p>
+        </a>
+        <a class="card" href="https://gdg.community.dev/events/details/google-gdg-torino-presents-devfest-italia-2020/" target="_blank" rel="noopener">
+          <span class="card__venue">GDG DevFest</span>
+          <h3 class="card__title">SRE Core Principles &amp; Modern Operations</h3>
+          <p class="card__desc">DevFest Italia · 2020 — from reactive systems administration to proactive, software-defined SRE.</p>
+        </a>
+        <a class="card" href="https://www.youtube.com/watch?v=RDGOenCM96g" target="_blank" rel="noopener">
+          <span class="card__venue">Google Summits</span>
+          <h3 class="card__title">Applied AI Adoption in Systems Operations</h3>
+          <p class="card__desc">Google internal · 2021–2025 — frameworks for integrating AI into SRE workflows to reduce toil.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & CERTIFICATIONS ============ -->
+    <section class="section" id="education">
+      <div class="section__head">
+        <span class="section__num">07</span>
+        <div>
+          <h2 class="section__title">Education &amp; certifications</h2>
+        </div>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu">
+          <h3 class="card__title">Università degli Studi di Trento</h3>
+          <div class="edu__item">
+            <span class="edu__degree">Master's in Telecommunications Engineering</span>
+            <span class="edu__meta">Mar 2015 · 107/110 · English</span>
+          </div>
+          <div class="edu__item">
+            <span class="edu__degree">Bachelor's in Electronics &amp; Telecommunications Engineering</span>
+            <span class="edu__meta">Dec 2012 · 107/110</span>
+          </div>
+        </div>
+
+        <div class="certs">
+          <h3 class="card__title">Certifications</h3>
+          <ul class="certs__list">
+            <li><span class="certs__name">Python Readability Certification</span><span class="certs__issuer">Google</span></li>
+            <li><span class="certs__name">AWS Certified SysOps Administrator – Associate</span><span class="certs__issuer">Amazon Web Services</span></li>
+            <li><span class="certs__name">Red Hat Certified System Administrator (RHCSA)</span><span class="certs__issuer">Red Hat</span></li>
+            <li><span class="certs__name">Power Systems for AIX II (AN12G)</span><span class="certs__issuer">IBM</span></li>
+            <li><span class="certs__name">ITIL Foundation Certification</span><span class="certs__issuer">AXELOS · 2018</span></li>
+            <li><span class="certs__name">Docker Mastery: Advanced Toolset</span><span class="certs__issuer">Bret Fisher</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="section__head">
+        <span class="section__num">08</span>
+        <div>
+          <h2 class="section__title">Get in touch</h2>
+        </div>
+      </div>
+
+      <div class="contact">
+        <p class="contact__lede">
+          Open to opportunities in site reliability, distributed systems, and AI infrastructure.
+          The fastest way to reach me is LinkedIn.
+        </p>
+        <a class="btn btn--primary" href="https://www.linkedin.com/in/fabrizio-waldner/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        <div class="contact__secondary">
+          <a href="https://github.com/fabrizio2210" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://fabrizio2210.medium.com/" target="_blank" rel="noopener">Medium</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__grid">
+      <span class="footer__name">Fabrizio Waldner</span>
+      <div class="footer__links">
+        <a href="https://github.com/fabrizio2210" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/fabrizio-waldner/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://fabrizio2210.medium.com/" target="_blank" rel="noopener">Medium</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
